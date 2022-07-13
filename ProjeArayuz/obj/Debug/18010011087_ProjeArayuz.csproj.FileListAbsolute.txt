@@ -1,0 +1,10 @@
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\bin\Debug\18010011087_ProjeArayuz.exe.config
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\bin\Debug\18010011087_ProjeArayuz.exe
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\bin\Debug\18010011087_ProjeArayuz.pdb
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\18010011087_ProjeArayuz.csproj.AssemblyReference.cache
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\_18010011087_ProjeArayuz.Form1.resources
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\_18010011087_ProjeArayuz.Properties.Resources.resources
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\18010011087_ProjeArayuz.csproj.GenerateResource.cache
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\18010011087_ProjeArayuz.csproj.CoreCompileInputs.cache
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\18010011087_ProjeArayuz.exe
+E:\HEDIYEORHAN\2022Bahar\GomuluSistemler\18010011087_ProjeArayuz\obj\Debug\18010011087_ProjeArayuz.pdb

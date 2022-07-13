@@ -1,15 +1,17 @@
-<h1> 1.	PROJE KONUSU VE ÖZETİ </h1>
+<h2> 1.	PROJE KONUSU VE ÖZETİ </h2>
 
 Proje, Arduino UNO [1] kartı ile geliştirilmiş bir gömülü sistem çalışmasıdır. Arduino UNO kartına bağlanan sıcaklık sensörü LM35 [2] ile ortamın sıcaklığı santigrat (°C) cinsinden ölçülmüştür. Su seviye sensörü ile projenin çalışma ortamına bağlı olarak bir kabın içindeki su seviyesi veya ortamda bulunan suyun seviyesi ölçülmektedir. Sıcaklık sensörü ile ölçülen değer arduino kodu içerisinde bir koşula bağlanmıştır. Sıcaklık değeri istenilen seviyenin üzerine çıktığında arduino kartına bağlanmış olan buzzer ile uyarı sesi verilmektedir. Aynı şekilde suyun seviyesindeki değişimleri görmek ve kullanıcıya bildirmek için rgb led ışıklar tercih edilmiştir. Ortamda su bulunmadığı durumlarda ledler kapalıdır, düşük seviye su bulunduğunda kırmızı led yanmaktadır, orta seviye su bulunduğunda sarı led yanmaktadır ve son olarak yüksek seviye su miktarı olduğunda yeşil led yanmaktadır. Bu şekilde sıcaklık ve suyun seviyesi kullanıcıya bu uyarılar sayesinde bildirilmektedir. Projenin günlük hayat problemlerine uyarlanabilmesi durumu için bir ara yüz tasarımı yapılmıştır. Ara yüz yardımı ile su seviyesinin anlık olarak değerleri kontrol edilebilmektedir. Yapılan ara yüz şu an bilgisayar üzerinde çalışabilecek seviyededir. Ara yüz programı geliştirildiği ve üzerine çalışıldığı takdirde bir mobil uygulama haline getirilebilir ve kullanıcıya kullanım kolaylığı sağlatılabilir. Proje günlük hayata uyarlanmak istenirse çiçek sulama sistemlerinde kullanılabileceği düşünülmüştür. Ortamın sıcaklığına ve eldeki su miktarına bakılarak çiçeklere yeterli miktarda insan gücü gerektirmeden su verilebilir. Evcil hayvanların su kaplarını doldurma gibi daha pek çok alanda bu sistemin geliştirilerek kullanılabileceği düşünülmektedir.
 
-
+![image](https://user-images.githubusercontent.com/59260491/178811825-9ad1ad66-5889-42bd-8b3c-a9eb71297729.png)
   
 Projenin çalışma aşamasından görseller
 
-<h1> 2.	PROJEDE KULLANILAN DONANIM AYGITLARI VE TEKNİK ÖZELLİKLERİ </h1>
+<h2> 2.	PROJEDE KULLANILAN DONANIM AYGITLARI VE TEKNİK ÖZELLİKLERİ </h2>
       
 
-<h2> 2.1.	  ARDUINO UNO </h2>
+<h3> 2.1. ARDUINO UNO </h3>
+
+![image](https://user-images.githubusercontent.com/59260491/178811919-89ae7713-308a-47fa-8dd8-4055a445e73e.png)
 
 Arduino kartları arasında sıklıkla kullanılan kartlardan biridir. Bir sisteme entegre edilmesi   kolay olduğu için pek çok kullanım alanları vardır. Akıllı ev sistemleri, robot sistemleri gibi gelişmiş sistemlerde kullanılabilir. Onun haricinde okul projelerinde bireysel küçük çaplı projelerde de kullanım kolaylığı açısından tercih edilmektedir. Elektronik devrelerin kontrol edilmesi ve çalıştırılmasını sağlar.
 •	Dijital çıkış pini sayısı : 14
@@ -23,8 +25,9 @@ Arduino kartları arasında sıklıkla kullanılan kartlardan biridir. Bir siste
 •	I/O için akım : 40 mA
 •	3.3 V çıkış için akım : 50 mA
 
-<h2> 2.2.	 LM35 SICAKLIK SENSÖRÜ </h2>
+<h3> 2.2. LM35 SICAKLIK SENSÖRÜ </h3>
 
+![image](https://user-images.githubusercontent.com/59260491/178811982-6b0ebb57-5cf2-4241-9969-1606d7cc914a.png)
 
 Santigrat cinsinden (°C) analog değeri okuyarak bir sıcaklık değeri elde edilmesini sağlar.
 •	Doğrusal +10.0 mV /  °C skala faktörü
@@ -32,7 +35,10 @@ Santigrat cinsinden (°C) analog değeri okuyarak bir sıcaklık değeri elde ed
 •	Tam -55° ila +150°C aralığındadır.
 •	4 ila 30 volt arasında çalışır.
 •	60 µA’dan az akım.
-2.3.	 SU SEVİYE TESPİT SENSÖRÜ
+
+<h3> 2.3. SU SEVİYE TESPİT SENSÖRÜ </h3>
+
+![image](https://user-images.githubusercontent.com/59260491/178812071-b5d2fdda-819e-4a89-aa72-023581e95242.png)
 
 Su seviye sensörü, beşi güç iletkeni ve beşi hassasiyet iletkeni olan on iletken bakır izine sahiptir. Bu iletkenler su ile etkileşime girdiğinde bir analog değer verir. Direnç, suyun yüksekliği ile ters orantılıdır. Sensör ne kadar suya daldırılırsa, iletkenlik de o kadar iyi olur ve direnç azalır. Sensör ne kadar az suya daldırılırsa, iletkenlik zayıf olur ve direnç artar. Sensör, dirence göre bir çıkış voltajı üretir, bu da ölçerek su seviyesinin belirlenmesine yardımcı olur.
 •	Çalışma voltajı : DC 3-5V
@@ -44,7 +50,9 @@ Su seviye sensörü, beşi güç iletkeni ve beşi hassasiyet iletkeni olan on i
 •	Çalışma nemi : 10% - 90% (yoğuşmasız)
 
 
-<h2> 2.4.	 BUZZER </h2>
+<h3> 2.4. BUZZER </h3>
+
+![image](https://user-images.githubusercontent.com/59260491/178812210-f6cccbf8-74ff-4690-a556-16ae18f86adb.png)
 
 Geniş alanlara ses sinyalleri yaymaktadır. Projeye göre istenilen şartlar sağlandığında ses sinyalleri ile uyarı vermektedir. Alarm işlevi görmektedir.
 •	Maksimum akım : 30 mA
@@ -52,16 +60,16 @@ Geniş alanlara ses sinyalleri yaymaktadır. Projeye göre istenilen şartlar sa
 •	Titreşim frekansı : 2300 +/- 300 Hz
 •	Çalışma voltajı : 4-8V
 
-<h2> 2.5.	 DİRENÇ </h2>
+<h3> 2.5. DİRENÇ </h3>
 
+![image](https://user-images.githubusercontent.com/59260491/178812246-078381df-adf4-4ad2-8dd9-d5c979cc7e61.png)
 
 Devreden geçen gerilim ve akım değerlerinde değişikliğe sebep olur. Bir elektrik devresinde akım akışına karşı oluşan etkinin ölçümüdür.
 
 
-		
+<h3> 2.6.LED </h3>
 
-
-<h2> 2.6.	 LED </h2>
+![image](https://user-images.githubusercontent.com/59260491/178812318-fac8e526-8728-4f99-bda4-dfba7e803674.png)
 
 Elektrik enerjisini ışığa dönüştüren yarı iletken bir devre elemanıdır. Belirli miktarda voltaj verildiğinde etrafa ışık saçmaktadırlar. Projede sarı, yeşil ve kırmızı renkte ledler kullanılmıştır.
 •	Boyut : 5 mm
@@ -69,12 +77,15 @@ Elektrik enerjisini ışığa dönüştüren yarı iletken bir devre elemanıdı
 •	Önerilen kullanım akımı : 16 - 18 mA
 •	Maksimum akım : 20 mA
 
-<h2> 2.7.	 JUMPER KABLO </h2>
+<h3> 2.7. JUMPER KABLO </h3>
+
+![image](https://user-images.githubusercontent.com/59260491/178812356-ec4a4871-ac3d-4ed8-a6c6-2daae4759290.png)
 
 Arduino ve breadboard arasında bağlantı yapılmasını sağlar. Örnek olarak projede kullanım alanlarından biri; arduino üzerinden gelen 5V, jumper kablolar ile breadboard üzerine aktarılmıştır ve 5V pini bu şekilde çoğaltılmıştır.
 
-<h2> 2.8.	 BREADBOARD </h2>
+<h3> 2.8. BREADBOARD </h3>
 
+![image](https://user-images.githubusercontent.com/59260491/178812411-ecadbbb1-c7f0-4483-b681-316ea5d20e14.png)
 
 Teknik terim olarak devre tahtası denilebilir. Üzerine sensör bağlanarak arduino kartı ile sensörün bağlantısının sağlanmasında kullanılmıştır.
 •	Gerilim : 300 V
@@ -83,64 +94,30 @@ Teknik terim olarak devre tahtası denilebilir. Üzerine sensör bağlanarak ard
 
 
 
+<h2> 3.	PROJE ÇİZİMİ </h2>
 
-
-
-
-<h1> 3.	PROJE ÇİZİMİ </h1>
-
+![image](https://user-images.githubusercontent.com/59260491/178812438-ef5f8213-093c-4ccb-85aa-9a79d48462b9.png)
  
 Proje çiziminde Fritzing programı kullanılmıştır. İkinci bölümde tanımlanan devre elemanları arduino ve breadboard üzerine bağlanarak bağlantılı hale getirilmiştir.
 
-<h1> 4.	PROJENİN AKIŞ DİYAGRAMI </h1>
+<h2> 4.	PROJENİN AKIŞ DİYAGRAMI </h2>
+
+![image](https://user-images.githubusercontent.com/59260491/178812488-e282bfc7-86fc-4b7c-a8f7-cdbe8180c71c.png)
 
 Kod akışını ve kodun çalışma mantığını anlatan akış diyagramıdır. Burada arduino içinde çalışan kod blokları anlatılmıştır. Arduinoya güç verildiği sürece bu kodlar çalışacaktır fakat burada sembolik olarak kod blokları bir kez çalıştıktan sonra son durumuna getirilmiştir.
  
 
-
-<h1> 5.	ARDUINO KODU </h1>
-
-Öncelikle arduino kodu içerisinde kullanılmak üzere iki adet kütüphane oluşturuldu. Bunlar readSensor ve ledAyari kütüphaneleridir. readSensor kütüphanesi içerisinde su seviye sensörü analog girişten (A0) değer okumaktadır. Aynı zamanda su seviye sensörünün arduino üzerinde bağlanacağı ve güç alacağı pin numarasına göre pin ayarı yapılmaktadır.
-
- readSensor.cpp
-
-
-
-ledAyari kütüphanesinde ledlerin arduino üzerinde bağlanacakları pin numaralarına göre pin ayarı yapılmaktadır. Her led için ayrı bir fonksiyon oluşturulmuştur. Aktif edilmek istenilen ledin arduino kodu içerisinde fonksiyonu çağırılarak led yakılmaktadır.
-
-
-
-Öncelikle arduino kodu içerisinde kendi oluşturmuş olduğumuz kütüphaneler include edildi. Sensörlerin ve ledlerin arduinoda hangi pine bağlanacağı ayarlandı. Kütüphanelerdeki fonksiyonları kullanmak için kütüphanelerden bir nesne oluşturuldu. Sensörlerden okunan değerlerin atanması ve if koşullarının kontrol edilmesi için değişkenler tanımlandı.
- 
-Setup fonksiyonu içerisinde seri bağlantı başlatıldı. Pin ayarları için gerekli fonksiyonlar çağırıldı. Timer kesmesi [4] ayarlaması yapıldı.
- 
-Timer içinde saniyede bir su seviye sensöründen gelen değer okunmaktadır. Okunan değer lowerThreshold ve upperThreshold değerleri ile if koşulu içerisinde karşılaştırılmaktadır. Sağlanan koşula göre ekrana su miktarı yazdırılmaktadır ve led yanmaktadır. İki saniyede bir sıcaklık değeri okunmaktadır. Okunan sıcaklık değeri istenilen değerden büyükse buzzer açılmaktadır ve alarm sesi ile uyarı verilmektedir.
- 
- 
-
-Arduino UNO kartımıza güç verildiğinde kod çalışmaktadır. Kod çalışırken ekrana verdiği çıktıyı aşağıdaki görselde inceleyelim. Sensörlerden okunan değerler ve koşulların sağlandığı burada görülmektedir. Saniyede bir su seviye sensöründen değer okunduğu ve iki saniyede bir sıcaklık sensöründen değer okunduğu görülmektedir.
- 
-
-<h2> 5.1.	 ARA YÜZ TASARIMI </h2>
+<h3> 6.	ARA YÜZ TASARIMI </h3>
 
 Arduino koduna ek olarak Visual Studio ortamında C# programlama dilinde bir ara yüz tasarımı yapılmıştır. Tasarlanan ara yüz sayesinde su seviyesinin anlık olarak artış ve azalış durumları görülmektedir. Bilgisayar ortamında çalışacak şekilde programlanan ara yüz tasarımının geliştirilerek mobil cihazlara da entegre edilebileceği düşünülmektedir.
  
 İlk olarak kullanılacak kütüphaneler tanımlanmaktadır.  Arduino ve ara yüz arasında bağlantı sağlanması için kullanılabilecek portlar bir liste şeklinde kullanıcının seçmesi için sunulmaktadır. Bağlantı sağlanan port üzerindeki Serial fonksiyonlarından gelen, su seviye değerleri alınmaktadır.
 
- 
-
 Oluşturulan bağlantı butonu ile port seçimi yapıldıktan sonra bağlantı sağlanmaktadır. Bağlantı sağlanamaması durumda kullanıcıya anlaşılır ve düzgün bilgi vermek için hata yakalama metotları (try-catch blokları) kullanılmaktadır.
-
- 
-
-
-
-
 
 Port bağlantısını kesmek için bir buton oluşturulmaktadır.
 
- 
-
 Oluşturulan ara yüz ve çalışma mantığı şu şekildedir.
 
+![image](https://user-images.githubusercontent.com/59260491/178813068-e33d0ee8-6247-47f2-b309-a1f2193393bf.png)
 
